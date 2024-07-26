@@ -1,0 +1,52 @@
+
+h2 {
+  font-size: 1.2rem;
+}
+
+i {
+  color: var(--preto);
+  border: var(--preto)
+}
+
+a {
+  color: var(--preto);
+  text-decoration: none;
+  border-radius: 4px;
+  border: 2px solid var(--laranja);
+}
+
+a:hover, a:active{
+  background-color: var(--laranja);
+}
+
+.links-redes {
+  width: 14rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (min-width: 768px) {
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media (min-width: 1440px) {
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  a {
+    font-size: 1.2rem;
+    justify-content: center;
+  }
+
+  i {
+    font-size: 1.2rem;
+  }
+
+}

@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --azul-escuro: #1A4977;
+  --azul-claro: #348EEE;
+  --cinza-fundo: #CCCCCC;
+  --laranja: #DB701E;
+  --preto: #1B1B1B;
+  --branco: #EFEFEF;
+  color:#1B1B1B;
+  font-family: var(--fonte-secundaria);
+  --fonte-primaria: "Rubik Mono One", monospace;
+  --fonte-secundaria: "Rubik", sans-serif;
+}
+
+.destaque-azul-claro {
+  color: var(--azul-claro);
+}
+
+.destaque-azul-escuro {
+  color: var(--azul-escuro);
+}
+
+.destaque-laranja {
+  color: var(--laranja);
+}

@@ -1,0 +1,8 @@
+footer {
+  background-color: var(--preto);
+}
+
+p {
+  color: var(--branco);
+  font-family: var(--fonte-secundaria);
+}

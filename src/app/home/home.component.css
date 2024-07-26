@@ -1,0 +1,36 @@
+body {
+  font-family: var(--fonte-secundaria);
+  background-color: var(--cinza-fundo);
+}
+
+
+h1 {
+  font-family: var(--fonte-primaria);
+  color: var(--laranja);
+  font-size: 1.5rem;
+}
+
+p b {
+  font-weight: normal;
+}
+
+@media (min-width: 1440px) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  img {
+    min-width: 15rem;
+    min-height: 15rem;
+  }
+
+  .descricao {
+    max-width: 30%;
+  }
+
+}
