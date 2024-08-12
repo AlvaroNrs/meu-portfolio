@@ -1,0 +1,19 @@
+
+<body>
+  <section class="container text-center pb-2">
+    <h1 class="text-uppercase fs-2 pt-5 pb-2 pb-xxl-3 mb-0">Trabalhos</h1>
+    <p class="text-center mb-0">Aqui estão alguns trabalhos realizados por mim:</p>
+    <div class="justify-content-center justify-content-lg-start my-3 px-5 px-md-0 mx-auto container-flex column-gap-md-3 column-gap-xxl-5
+    row row-gap-3 row-gap-xxl-4">
+      <div class="card col-12 col-lg-6 col-xxl-3 align-items-center" style="width: 18rem;"
+      *ngFor="let trabalho of listaTrabalhos">
+        <img src="{{ trabalho.img }}" class="card-img-top img-fluid row-3" alt="Capa do Card">
+        <div class="card-body">
+          <h5 class="card-title row-3 text-center py-2 px-2">{{ trabalho.nome | slice:0:14}}</h5>
+          <p class="card-text  row-4 px-2 pt-1">{{ trabalho.descricao }}</p>
+          <a href="{{ trabalho.urlTrabalho }}" class="btn row-2 mb-2">Ver Projeto<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>

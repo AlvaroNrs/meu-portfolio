@@ -10,6 +10,7 @@ import { AcessoRedesComponent } from './acesso-redes/acesso-redes.component';
 import { SobreMimComponent } from './sobre-mim/sobre-mim.component';
 import { CurriculoComponent } from './curriculo/curriculo.component';
 import { NaoFinalizadoComponent } from './nao-finalizado/nao-finalizado.component';
+import { TrabalhosComponent } from './trabalhos/trabalhos.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NaoFinalizadoComponent } from './nao-finalizado/nao-finalizado.componen
     AcessoRedesComponent,
     SobreMimComponent,
     CurriculoComponent,
-    NaoFinalizadoComponent
+    NaoFinalizadoComponent,
+    TrabalhosComponent
   ],
   imports: [
     BrowserModule,
