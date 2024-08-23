@@ -10,10 +10,34 @@
         <img src="{{ trabalho.img }}" class="card-img-top img-fluid row-3" alt="Capa do Card">
         <div class="card-body">
           <h5 class="card-title row-3 text-center py-2 px-2">{{ trabalho.nome | slice:0:14}}</h5>
-          <p class="card-text  row-4 px-2 pt-1">{{ trabalho.descricao }}</p>
-          <a href="{{ trabalho.urlTrabalho }}" class="btn row-2 mb-2">Ver Projeto<i class="fa-solid fa-arrow-right"></i></a>
+          <p class="card-text  row-4 px-2 pt-1">{{ trabalho.textoCapa }}</p>
+          <button (click)="abrirDetalhesTrabalho(trabalho)" class="btn row-2 mb-2" data-bs-toggle="modal" data-bs-target="#modalDetalheProjeto">
+            Detalhes<i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
       </div>
     </div>
   </section>
+  <!-- Modal -->
+<div class="modal fade" id="modalDetalheProjeto" tabindex="-1" aria-labelledby="modalDetalheProjeto" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">{{ trabalhoAtual.nome }}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="{{ trabalhoAtual.img }}" class="img-fluid" alt="Capa da Modal">
+        <p class="card-text  row-4 px-2 pt-1">{{ trabalhoAtual.descricao }}</p>
+        <p class="card-text  row-4 px-2 pt-1">Utilizei as seguintes tecnologias para desenvolve-lô:</p>
+        <ul class="d-flex flex-wrap column-gap-5 row-gap-2 flex-shrink-1">
+          <li *ngFor="let tecnologia of trabalhoAtual.tecnologias">{{ tecnologia }}</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="{{ trabalhoAtual.urlTrabalho }}" class="btn row-2 mb-2">Ver Projeto</a>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
