@@ -70,6 +70,14 @@ a:hover, a:active{
   color: var(--preto);
 }
 
+.modal-body li {
+  list-style-type: none;
+  color: var(--branco);
+  background-color: var(--laranja);
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+}
+
 @media (min-width: 768px) {
   .card {
     max-width: 30%;
