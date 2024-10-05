@@ -9,6 +9,14 @@ export interface Trabalho {
 
 export const trabalhos : Trabalho[] = [
   {
+    nome : 'Intercessores',
+    img:'../../assets/img/Intercessores.png',
+    textoCapa: 'Página do cardgame Intercessores, meu jogo de cartas',
+    descricao: 'Página com o manual do jogo Intercessores, jogo de cartas católico que estou desenvolvendo',
+    tecnologias: ['React', 'HTML5', 'CSS', 'Bootstrap', 'JavaScript'],
+    urlTrabalho: 'https://intercessores-nine.vercel.app'
+  },
+  {
     nome : 'Chronometrus',
     img:'../../assets/img/Chronometrus.png',
     textoCapa: 'Página de cronômetro, com estilo e música de acordo com a opção escolhida',
