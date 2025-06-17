@@ -52,6 +52,10 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.lista-cursos {
+  text-align: left;
+}
+
 .lista img {
   max-width: 0.8rem;
   max-height: 0.8rem;
@@ -61,6 +65,12 @@ p {
 @media (min-width: 768px) {
   .titulo-secao {
     margin-top: 0.5rem;
+  }
+  .lista-cursos {
+    text-align: center;
+  }
+  .lista-cursos p {
+  text-align: center;
   }
 }
 
@@ -83,6 +93,7 @@ p {
   }
 
   .lista-cursos {
+    text-align: center;
     margin-left: 7rem;
     margin-right: 7rem;
   }
